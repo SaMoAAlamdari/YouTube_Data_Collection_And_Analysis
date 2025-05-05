@@ -95,7 +95,7 @@ plot_engagement_heatmap(df)
 
 ### Clone Repository
 ```bash
-git clone https://github.com/yourusername/youtube-trend-analysis.git
+git clone https://github.com/SaMoAAlamdari/YouTube_Data_Collection_And_Analysis
 cd youtube-trend-analysis
 ```
 
