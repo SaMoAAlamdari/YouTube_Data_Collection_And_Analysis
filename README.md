@@ -6,8 +6,6 @@
 
 A comprehensive analysis of YouTube trending videos and channel-specific strategies using the YouTube Data API.
 
-![Sample Visualization](https://via.placeholder.com/800x400.png?text=Engagement+Analysis+Example)
-
 ## 📖 Project Overview
 This project collects trending video data from YouTube's API and performs exploratory analysis to uncover:
 - Trends in video categories
