@@ -1,36 +1,41 @@
-# YouTube Data Analysis Project
+# YouTube Data Analysis & Trending Insights 🎥📊
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
-A comprehensive analysis of YouTube trending videos and channel-specific strategies using the YouTube Data API.
+A data-driven exploration of YouTube trends and channel analytics using Python and YouTube Data API v3.
 
-## 📖 Project Overview
-This project collects trending video data from YouTube's API and performs exploratory analysis to uncover:
-- Trends in video categories
-- Optimal video lengths
-- Impact of publishing times
-- Channel-specific performance patterns (e.g., MrBeast case study)
-- Text analysis of video metadata
+## Table of Contents
+- [Project Overview](#-project-overview)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Key Findings](#-key-findings)
+- [Visualizations](#-visualizations)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-## ✨ Key Features
-- **API Data Collection**: Fetches trending videos (+200) from YouTube API
-- **Data Processing**:
-  - ISO 8601 duration conversion
-  - DateTime standardization
-  - Missing value handling
-- **Interactive Visualizations**:
-  - Engagement correlation heatmaps
-  - Temporal analysis plots
-  - Category distribution charts
-- **Channel Analytics**:
-  - Video performance tracking
-  - Publishing pattern analysis
-  - Content topic modeling
+## 📌 Project Overview
 
-## 🛠️ Installation
-1. Clone repository:
-```bash
-git clone https://github.com/yourusername/YouTube-Data-Analysis.git
-cd YouTube-Data-Analysis
+This project analyzes YouTube trending videos to discover:
+- Trending video characteristics
+- Optimal publishing strategies
+- Engagement patterns
+- Channel growth factors
+- Content category performance
+
+Includes a special case study of **MrBeast's channel** (57M+ subscribers).
+
+## ✨ Features
+
+### Data Collection
+- Automated API data fetching
+- Pagination handling
+- Multi-category analysis
+
+### Analytics
+```python
+# Sample analysis code
+def analyze_engagement(df):
+    return df.groupby('category')['view_count'].mean().sort_values(ascending=False)
